@@ -5,7 +5,7 @@ function greeting(name) {
 console.log(greeting("Hab"));
 
 //2 Write an expression function that take two parameters “num1” & “num2” and returns their sum
-function sum(num1, num2) {
+const sum = function(num1, num2) {
   return num1 + num2;
 }
 console.log(sum(12, 15));
