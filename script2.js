@@ -52,9 +52,15 @@ const products =[
     }
 ];
 function detail(obj) {
-  console.log(obj.filter(product => product.quantity>0))
+    const inStock = []
+    for(let i=0;i<obj.length;i++){
+        if(obj[i].quantity>0){
+            inStock.push(obj[i])
+        }
+    }
+    return inStock
 }
-detail(products);
+console.log(detail(products))
 
 //6 Write a function that could check if the password provided is strong or not. A strong password should have a minimum length of 8 characters
 let pass= "1ACF21345@@#434dfdgdg"
